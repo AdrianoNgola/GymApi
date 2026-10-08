@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("School.Infra.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3d4ae0220d86a990c2ca2eaf8fc27fa1e2d9d2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+603f3d7643634700d30e5f8eac451cadc6e23ae8")]
 [assembly: System.Reflection.AssemblyProductAttribute("School.Infra.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("School.Infra.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
