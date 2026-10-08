@@ -1,0 +1,16 @@
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\bin\Debug\net8.0\School.Aplication.deps.json
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\bin\Debug\net8.0\School.Aplication.dll
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\bin\Debug\net8.0\School.Aplication.pdb
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\bin\Debug\net8.0\School.Domain.dll
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\bin\Debug\net8.0\School.Domain.pdb
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.csproj.AssemblyReference.cache
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.AssemblyInfoInputs.cache
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.AssemblyInfo.cs
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.sourcelink.json
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.A.7F77C2B7.Up2Date
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.dll
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\refint\School.Aplication.dll
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\School.Aplication.pdb
+C:\Users\Bento\Documents\Guia de Estudos Back-And Asp.NET Core\School\School.Aplication\obj\Debug\net8.0\ref\School.Aplication.dll
