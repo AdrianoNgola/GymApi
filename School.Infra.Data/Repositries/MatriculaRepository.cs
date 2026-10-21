@@ -41,12 +41,12 @@ namespace School.InfraData.Repositries
 
         public async Task<List<Matricula>> GetAllAsync()
         {
-            return await _context.Matricula.Include(x => x.User).Include(x => x.Turma).Where(x => x.Excluido == false).ToListAsync();
+            return await _context.Matricula.Include(x => x.Turma).Where(x => x.Excluido == false).ToListAsync();
         }
 
         public async Task<Matricula?> GetByIdAsync(int id)
         {
-            return await _context.Matricula.Include(x => x.User).Include(x => x.Turma).Where(x => x.Id == id && x.Excluido == false).FirstOrDefaultAsync();
+            return await _context.Matricula.Include(x => x.Turma).Where(x => x.Id == id && x.Excluido == false).FirstOrDefaultAsync();
         }
 
         public async Task<Matricula> UpdateAsync(Matricula matricula)

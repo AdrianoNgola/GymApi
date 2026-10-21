@@ -17,10 +17,7 @@ namespace School.InfraData.EntitiesConfiguration
             builder.Property(m => m.TurmaId).IsRequired();
             builder.Property(m => m.DataExp).IsRequired();
 
-            builder.HasOne(m => m.User)
-                .WithMany(u => u.Matriculas)
-                .HasForeignKey(m => m.UserId)
-                .OnDelete(DeleteBehavior.NoAction);
+           
 
             builder.HasOne(m => m.Turma)
                 .WithMany(t => t.Matriculas)

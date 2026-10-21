@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj": {}
+    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\School.Aplication.csproj": {
+    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\School.Aplication.csproj",
+        "projectUniqueName": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
         "projectName": "School.Aplication",
-        "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\School.Aplication.csproj",
+        "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
         "packagesPath": "C:\\Users\\Bento\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\obj\\",
+        "outputPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj": {
-                "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj"
+              "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj": {
+                "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj": {
+    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj",
         "projectName": "School.Domain",
-        "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj",
+        "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj",
         "packagesPath": "C:\\Users\\Bento\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\obj\\",
+        "outputPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj": {
+    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj",
+        "projectUniqueName": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj",
         "projectName": "School.Infra.Data",
-        "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj",
+        "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Bento\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\obj\\",
+        "outputPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,8 +169,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj": {
-                "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj"
+              "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj": {
+                "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj"
               }
             }
           }
@@ -236,14 +236,14 @@
         }
       }
     },
-    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj": {
+    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj",
+        "projectUniqueName": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj",
         "projectName": "School.Infra.Ioc",
-        "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj",
+        "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Ioc\\School.Infra.Ioc.csproj",
         "packagesPath": "C:\\Users\\Bento\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Ioc\\obj\\",
+        "outputPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Ioc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -265,14 +265,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\School.Aplication.csproj": {
-                "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Aplication\\School.Aplication.csproj"
+              "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {
+                "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj"
               },
-              "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj": {
-                "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Domain\\School.Domain.csproj"
+              "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj": {
+                "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Domain\\School.Domain.csproj"
               },
-              "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj"
+              "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj": {
+                "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Infra.Data\\School.Infra.Data.csproj"
               }
             }
           }

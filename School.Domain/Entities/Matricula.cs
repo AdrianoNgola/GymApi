@@ -15,8 +15,7 @@ namespace School.Domain.Entities
         public bool Ativo { get; set; }
         public ICollection<Nota>? ValorNota { get; set; }
         public bool Excluido { get; set; }
-        public User? User { get; set; }
-
+       
         public Turma? Turma { get; set; }
 
     }
