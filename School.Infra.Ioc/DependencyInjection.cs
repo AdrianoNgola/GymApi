@@ -17,10 +17,12 @@ using School.Aplication.Services.Turma;
 using School.Aplication.Services.Turma.Interface;
 using School.Aplication.Services.User;
 using School.Aplication.Services.User.Interface;
+using School.Aplication.Services.Utilizador;
 using School.Domain.Account;
 using School.Domain.Entities;
 using School.Domain.Interfaces;
 using School.Infra.Data.Identity;
+using School.Infra.Data.Repositries;
 using School.InfraData.Context;
 using School.InfraData.Repositries;
 
@@ -56,20 +58,24 @@ namespace School.Infra.Ioc
                     };
                 });
 
-                services.AddScoped<IUserRepository, UserRepository>();
+                
                 services.AddScoped<ICursoRepository, CursoRepository>();
                 services.AddScoped<IMatriculaRepository, MatriculaRepository>();
                 services.AddScoped<INotaRepository, NotaRepository>();
                 services.AddScoped<ITurmaRepository, TurmaRepository>();
+                 services.AddScoped<IPerfilRepository, PerfilRepository>();
+                  services.AddScoped<IGeneroRepository, GeneroRepository>();
+                services.AddScoped<IUtilizadorRepository, UtilizadorRepository>();
 
 
-
-                services.AddScoped<IUserService, UserService>();
+                
+               
                 services.AddScoped<ICursoService, CursoService>();
                 services.AddScoped<ITurmaService, TurmaService>();
                 services.AddScoped<INotaService, NotaService>();
                 services.AddScoped<IMatriculaService, MatriculaService>();
                 services.AddScoped<IAuthenticate, AuthenticateService>();
+                services.AddScoped<IUtilizadorService, UtilizadorService>();
 
 
 

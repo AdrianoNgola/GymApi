@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using School.Domain.Account;
 using School.Domain.Entities;
+using School.Domain.Interfaces;
 using School.InfraData.Context;
 
 namespace School.Infra.Data.Identity
@@ -19,19 +20,25 @@ namespace School.Infra.Data.Identity
     {
         private readonly AplicationDbContext _Context;
         private readonly IConfiguration _configuration;
+         private readonly IPerfilRepository _Perfil;
 
-        public AuthenticateService(AplicationDbContext context, IConfiguration configuration)
+        public AuthenticateService(AplicationDbContext context, IConfiguration configuration, IPerfilRepository Perfil)
         {
             _Context = context;
             _configuration = configuration;
+            _Perfil = Perfil;
         }
-        public string GenerateToken(string email, int Id, string perfil)
+
+        public async Task<string> GenerateToken(string? email, string utlizadorId, Guid perfil)
         {
+
+            var Role = await _Perfil.GetByIdAsync(perfil);
+
             var claims = new[]
             {
                 new Claim("Email", email.ToLower()),
-                new Claim("Id", Id.ToString()),
-                new Claim(ClaimTypes.Role, perfil),
+                new Claim("Id", utlizadorId),
+                new Claim(ClaimTypes.Role, Role.Nome),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
@@ -49,22 +56,22 @@ namespace School.Infra.Data.Identity
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task<User?> GetUserByEmail(string email)
+        public async Task<Utilizador?> GetUserByEmail(string email)
         {
-            return await _Context.User.FirstOrDefaultAsync(u => u.Email == email);
+            return await _Context.Utilizador.FirstOrDefaultAsync(u => u.Email == email);
         }
 
         public async Task<bool> UserAuthenticate(string email, string senha)
         {
-            var user = await _Context.User.FirstOrDefaultAsync(u => u.Email == email);
-            if (user == null || user.Excluido != false)
+            var utilizar = await _Context.Utilizador.FirstOrDefaultAsync(u => u.Email == email);
+            if (utilizar == null || utilizar.Activo != true)
                 return false;
             
-            using var hmac = new HMACSHA512(user.PasswordSalt);
+            using var hmac = new HMACSHA512(utilizar.PalavraPasseSalt);
             var senhaHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(senha));
             for (int i = 0; i < senhaHash.Length; i++)
             {
-                if (senhaHash[i] != user.PasswordHash[i])
+                if (senhaHash[i] != utilizar.PalavraPasseHash[i])
                     return false;
             }
             return true;
@@ -72,9 +79,11 @@ namespace School.Infra.Data.Identity
          
         }
 
-        public Task<bool> UserExists(string email)
+        public async Task<bool> UserExists(string email)
         {
-           return _Context.User.AnyAsync(u => u.Email == email);
+           return await _Context.Utilizador.AnyAsync(u => u.Email == email);
         }
+
+      
     }
 }

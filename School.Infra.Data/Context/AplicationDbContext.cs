@@ -15,11 +15,14 @@ namespace School.InfraData.Context
 
         }
 
-        public DbSet<User> User { get; set; }
+       
         public DbSet<Curso> Curso { get; set; }
         public DbSet<Matricula> Matricula { get; set; }
         public DbSet<Nota> Nota { get; set; }
         public DbSet<Turma> Turma { get; set; }
+        public DbSet<Genero> Genero { get; set; }
+        public DbSet<Perfil> Perfil { get; set; }
+        public DbSet<Utilizador> Utilizador { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -2,7 +2,6 @@
 
 using School.Aplication.DTOs.Matricula;
 using School.Aplication.DTOs.Turma;
-using School.Aplication.DTOs.User;
 using School.Aplication.Services.Matricula.Interface;
 using School.Domain.Interfaces;
 
@@ -113,12 +112,7 @@ namespace School.Aplication.Services.Matricula
                         Ativo = matriculas.Ativo,
                         DataExp = matriculas.DataExp,
                         
-                        User = new UserGetDTO
-                        {
-                            Id = matriculas.User!.Id,
-                            Nome = matriculas.User.Nome,                     
-                            Email = matriculas.User.Email
-                        },
+                        
                         Turma = new TurmaGetDTO
                         {
                             Id = matriculas.Turma!.Id,
@@ -154,12 +148,7 @@ namespace School.Aplication.Services.Matricula
                         Ativo = matricula.Excluido,
                         DataExp = matricula.DataExp,
                         
-                        User = new UserGetDTO
-                        {
-                            Id = matricula.User!.Id,
-                            Nome = matricula.User.Nome,                     
-                            Email = matricula.User.Email
-                        },
+                       
                         Turma = new TurmaGetDTO
                         {
                             Id = matricula.Turma!.Id,
