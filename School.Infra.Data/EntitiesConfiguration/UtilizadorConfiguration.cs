@@ -21,7 +21,7 @@ namespace School.Infra.Data.EntitiesConfiguration
             builder.Property(u => u.PerfilId).IsRequired();
             builder.Property(u => u.Activo).IsRequired();
             builder.Property(u => u.DataInicio).IsRequired();
-            builder.Property(u => u.DataFim).IsRequired();
+            builder.Property(u => u.DataFim).IsRequired(false);
             builder.Property(u => u.DataActualizacao).IsRequired();
 
             builder.HasOne(u => u.Perfil)

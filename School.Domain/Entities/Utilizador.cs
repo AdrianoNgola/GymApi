@@ -18,7 +18,7 @@ namespace School.Domain.Entities
         public Guid PerfilId { get; set; }
         public bool Activo { get; set; }
         public DateTime DataInicio { get; set; }
-        public DateTime DataFim { get; set; }
+        public DateTime? DataFim { get; set; }
         public DateTime DataActualizacao { get; set; }
 
         public Perfil? Perfil { get; set; }
