@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Authentication;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -18,15 +20,27 @@ namespace School.Infra.Data.Identity
 {
     public class AuthenticateService : IAuthenticate
     {
+        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AplicationDbContext _Context;
         private readonly IConfiguration _configuration;
          private readonly IPerfilRepository _Perfil;
 
-        public AuthenticateService(AplicationDbContext context, IConfiguration configuration, IPerfilRepository Perfil)
+
+         private Guid? UtilizadorId
+        {
+            get
+            {
+                var userClaim = _httpContextAccessor.HttpContext?.User?.Claims?.FirstOrDefault(x => x.Type == "Id");
+                return Guid.TryParse(userClaim?.Value, out var userId) ? userId : null;
+            }
+        }
+
+        public AuthenticateService(AplicationDbContext context, IConfiguration configuration, IPerfilRepository Perfil, IHttpContextAccessor httpContextAccessor)
         {
             _Context = context;
             _configuration = configuration;
             _Perfil = Perfil;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<string> GenerateToken(string? email, string utlizadorId, Guid perfil)
@@ -84,6 +98,13 @@ namespace School.Infra.Data.Identity
            return await _Context.Utilizador.AnyAsync(u => u.Email == email);
         }
 
-      
+         public Guid GetUtilizadorId()
+        {
+            if (UtilizadorId.HasValue)
+                return UtilizadorId.Value;
+
+            throw new AuthenticationException("Usuário não identificado.");
+        }
+
     }
 }

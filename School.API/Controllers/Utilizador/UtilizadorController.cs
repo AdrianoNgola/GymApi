@@ -1,4 +1,5 @@
 
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using School.API.Models;
@@ -41,6 +42,8 @@ namespace School.API.Controllers.Utilizador
             var token = _authenticate.GenerateToken(utilizador.Email?.ToLower(), utilizador.Id.ToString(), utilizadorPostDTO.PerfilId);
 
             return Ok(new{Nome = utilizador.Nome, Token = token});
+
+            
         }
 
          [HttpGet]
@@ -105,7 +108,7 @@ namespace School.API.Controllers.Utilizador
         }
 
         
-         [HttpPut("{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(Guid id,UtilizadorPutDTO utilizadorPutDTO)
         {
            
