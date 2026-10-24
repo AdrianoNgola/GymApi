@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {}
+    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {
+    "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
         "projectName": "School.Aplication",
-        "projectPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
+        "projectPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\School.Aplication.csproj",
         "packagesPath": "C:\\Users\\Bento\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\obj\\",
+        "outputPath": "C:\\Users\\Bento\\Documents\\Guia de Estudos Back-And Asp.NET Core\\Project Gym\\GymApi\\School.Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
