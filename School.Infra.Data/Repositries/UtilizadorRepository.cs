@@ -46,7 +46,8 @@ namespace School.Infra.Data.Repositries
             if(utilizador != null)
             {
                 utilizador.Activo = true;
-                utilizador.DataFim = DateTime.UtcNow;
+                utilizador.DataFim = null;
+                utilizador.DataActualizacao = DateTime.UtcNow;
                 _context.Utilizador.Update(utilizador);
                 await _context.SaveChangesAsync();
                 return utilizador;
