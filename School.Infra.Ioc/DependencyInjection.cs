@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using School.Aplication.Services;
+using School.Aplication.Services.Cliente;
+using School.Aplication.Services.Cliente.Interface;
 using School.Aplication.Services.Curso;
 using School.Aplication.Services.Matricula;
 using School.Aplication.Services.Matricula.Interface;
@@ -63,12 +65,13 @@ namespace School.Infra.Ioc
                 services.AddScoped<IMatriculaRepository, MatriculaRepository>();
                 services.AddScoped<INotaRepository, NotaRepository>();
                 services.AddScoped<ITurmaRepository, TurmaRepository>();
-                 services.AddScoped<IPerfilRepository, PerfilRepository>();
-                  services.AddScoped<IGeneroRepository, GeneroRepository>();
+                services.AddScoped<IPerfilRepository, PerfilRepository>();
+                services.AddScoped<IGeneroRepository, GeneroRepository>();
                 services.AddScoped<IUtilizadorRepository, UtilizadorRepository>();
+                services.AddScoped<IClienteRepository, ClienteRepository>();
 
 
-                
+              
                
                 services.AddScoped<ICursoService, CursoService>();
                 services.AddScoped<ITurmaService, TurmaService>();
@@ -76,6 +79,7 @@ namespace School.Infra.Ioc
                 services.AddScoped<IMatriculaService, MatriculaService>();
                 services.AddScoped<IAuthenticate, AuthenticateService>();
                 services.AddScoped<IUtilizadorService, UtilizadorService>();
+                services.AddScoped<IClienteService, ClienteService>();
 
 
 

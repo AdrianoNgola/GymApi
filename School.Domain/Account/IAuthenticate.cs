@@ -12,6 +12,7 @@ namespace School.Domain.Account
         Task<string> GenerateToken(string? email, string utilizadorId, Guid perfilId);
         Task<Utilizador?> GetUserByEmail(string? email);
         Task<bool> UserExists(string? email);
+         Guid GetUtilizadorId();
 
          Task<bool> UserAuthenticate(string? email, string? senha);
     }
