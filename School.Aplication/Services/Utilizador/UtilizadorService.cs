@@ -38,8 +38,8 @@ namespace School.Aplication.Services.Utilizador
                     Id = utilizador.UtilizadorId,
                     Nome = utilizador.Nome,
                     Email = utilizador.Email,
-                    Perfil = perfil.Nome,
-                    Genero = genero.Nome,
+                    Perfil = perfil?.Nome,
+                    Genero = genero?.Nome,
                     DataNascimento = utilizador.DataNascimento,
                     Activo = utilizador.Activo
                 };

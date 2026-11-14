@@ -23,6 +23,7 @@ namespace School.InfraData.Context
         public DbSet<Genero> Genero { get; set; }
         public DbSet<Perfil> Perfil { get; set; }
         public DbSet<Utilizador> Utilizador { get; set; }
+        public DbSet<Cliente> Cliente { get; set; } 
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
